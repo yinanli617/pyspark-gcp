@@ -7,10 +7,10 @@ spec:
   type: Python
   pythonVersion: "3"
   mode: cluster
-  image: docker.io/yinanli617/pyspark-operator:v3.2.0
+  image: docker.io/yinanli617/pyspark-operator:v3.1.1
   imagePullPolicy: Always
   mainApplicationFile: https://raw.githubusercontent.com/yinanli617/test/main/download.py
-  sparkVersion: "3.2.0"
+  sparkVersion: "3.1.1"
   hadoopConf:
     "fs.gs.project.id": "kubeflow-yli"
     "fs.gs.system.bucket": "pyspark-yli"
@@ -19,7 +19,7 @@ spec:
   driver:
     cores: 1
     labels:
-      version: 3.2.0
+      version: 3.1.1
     secrets:
       - name: "spark-gcp-sa"
         path: "/mnt/secrets"
@@ -31,7 +31,7 @@ spec:
     instances: 2
     cores: 1
     labels:
-      version: 3.2.0
+      version: 3.1.1
     memory: "512m"
     secrets:
       - name: "spark-gcp-sa"

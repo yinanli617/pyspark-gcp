@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ARG SPARK_IMAGE=docker.io/yinanli617/spark-py:v3.1.2
+ARG SPARK_IMAGE=gcr.io/spark-operator/spark-py:v3.1.1-hadoop3
 FROM ${SPARK_IMAGE}
 
 # Switch to user root so we can add additional jars and configuration files.

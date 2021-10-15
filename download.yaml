@@ -1,0 +1,41 @@
+apiVersion: "sparkoperator.k8s.io/v1beta2"
+kind: SparkApplication
+metadata:
+  name: download
+  namespace: yinanli
+spec:
+  type: Python
+  pythonVersion: "3"
+  mode: cluster
+  image: docker.io/yinanli617/pyspark-operator:v3.2.0
+  imagePullPolicy: Always
+  mainApplicationFile: https://raw.githubusercontent.com/yinanli617/test/main/download.py
+  sparkVersion: "3.2.0"
+  hadoopConf:
+    "fs.gs.project.id": "kubeflow-yli"
+    "fs.gs.system.bucket": "pyspark-yli"
+    "google.cloud.auth.service.account.enable": "true"
+    "google.cloud.auth.service.account.json.keyfile": "/mnt/secrets/spark-gcp-sa.json"
+  driver:
+    cores: 1
+    labels:
+      version: 3.2.0
+    secrets:
+      - name: "spark-gcp-sa"
+        path: "/mnt/secrets"
+        secretType: GCPServiceAccount
+    envVars:
+      GCS_PROJECT_ID: kubeflow-yli
+    serviceAccount: spark-sa
+  executor:
+    instances: 2
+    cores: 1
+    labels:
+      version: 3.2.0
+    memory: "512m"
+    secrets:
+      - name: "spark-gcp-sa"
+        path: "/mnt/secrets"
+        secretType: GCPServiceAccount
+    envVars:
+      GCS_PROJECT_ID: kubeflow-yli

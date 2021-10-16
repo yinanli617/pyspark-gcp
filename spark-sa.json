@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kubeflow-yli",
+  "private_key_id": "581ae1c1467841d60088342286e234675e398a62",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjwVbVzclIXm7C\nRWo6zzuIPFeOHxIka92gR5eavQZVSMbaWB/odnC1S/JQaxyjgJM1A8Kz5uHDHC5i\nT2gRS18wkEXeVTtQitaY1pjeCmbtFxmynvjN3UW35LVimo0GQjYSlsDjwtQaLO9D\nRJVRcxo8OXY5LcyiblmuhHbO+eoE4FrRhbuwiPoi4ivgsE5xgF4YSn0JyrXqPmDW\nTPk480arwNWK/e4pduXSiNAYDwv7TcrTK9+prS211wbg2wQJC6VODQ1EjgqH6VNE\n8lc3BxWNIGFp91mTncLa8qmvrX7juUKGaqJtR3FRxgm9larLKqgZFf9Iw33ufa/a\nCv6VVL53AgMBAAECggEACMIUYkK4akmDWIIjLHbFSHRgPjgF/ROOzA06EGUTcMUh\n1x9LaXzgfFWa0FUwyT12Vl66JoE1jkivpJp+xdIlq3A+LOdkfAY9bAGDPbVIXEv7\n8ilN0lt0xQu3npPojLnlar/pqU3X1S0u2DczchSLM49WyKpxCOVVxTG/1dljZ+OG\n0qdBn+wN7mohqe7l3FVPjrOKYfvArmOGLvVrNrTHQpPI9QEZAPb903C7taetorfD\n+N5vkLBhAyapw0Q5FjsUDLmtvTkAjYshuaEfkniXMqOxpAsWb3j6pCkMGVU7P9yC\nAMp+xKX95taBa2kezM1y5oJXRkKloGZ+z59mNPrwZQKBgQD9mb+Wwl4qIQ5HIwwq\nPDdVpcXUT4JRyGBDJ5G0wEu5NXF24nVdWI251BkLJW49dZ7fMiXMAONG52sv5epU\n/hfuUOoczdH3fgSSVU0GfWDX6vgHM30ix4aM/x38nMoISHVDrGp7rKIXGEtNYFsd\npSq2VHgFbqgKX7A2QwGK8QPSkwKBgQDl6P1+jpzNA39WLsuxtA6voX1AiZP79sbQ\nE6Q1RbZwBLiwO2WArOJRye4rzzjGjwWVTkMIJq/CDEzDzjqu5SWypAtGTzZVHLfP\nkjCp1exMGitNumhJiGEDmJULGUnUy8/aFTjlIkFgCCvmaP23kPBZHRYQ84b8ZiQe\nYCUmVZffDQKBgQD2FfrHJYdQpFEBkK3eUh5z+u/0bM8N4z4eDEikuDEC4Sxga7Ht\nyd+FYp6GpWTLONbYyQXKZ1YkWK43hYiVvxejx1rWZpcH7X4sLaAX2xRdkYHrIvic\nBje3nFwR5GdcEEvSRn3x0vxbItT3mbfxFXRUB7WLt+xSXLZWgUD+/Y9zBwKBgFrU\nAAmWh8XKouzGUfyjWMXz84qij48UQBkGGXJeVyPMCba90GzUYBjVwL0YAaMX76m7\noGnA9uCfgVg9yhs8NfdsLXQaaSmYzdk4NPdzpwWttPvhL8AVG9aS2hbnZ66k0jmi\n9rY3IUKyF73QLqPto7Zg8k3CF8rxA0Xoz+RkHjqlAoGAa2lUTNDLqwqAAid57b5i\nwszgocVZyPDJQsptVSeKdprQdVhtNbq+dAbSYt5gd4lpMXkryFzhNxa73PIQvHN3\napFWyjZJZjyU1umsjtTk3NZChn3slxnOBiRz3Vdry7Dtahhw7aoPCf0mkmGeg5p2\nVxvEyDW/r0X+si2mcA5mJgM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spark-gcp-sa@kubeflow-yli.iam.gserviceaccount.com",
+  "client_id": "103493365836869236079",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spark-gcp-sa%40kubeflow-yli.iam.gserviceaccount.com"
+}

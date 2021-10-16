@@ -22,8 +22,11 @@ USER root
 
 # Setup dependencies for Google Cloud Storage access.
 RUN rm $SPARK_HOME/jars/guava-14.0.1.jar
-ADD https://repo1.maven.org/maven2/com/google/guava/guava/23.0/guava-23.0.jar $SPARK_HOME/jars
-RUN chmod 644 $SPARK_HOME/jars/guava-23.0.jar
+
+ADD https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar $SPARK_HOME/jars
+RUN chmod 644 $SPARK_HOME/jars/failureaccess-1.0.1.jar
+ADD https://repo1.maven.org/maven2/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar $SPARK_HOME/jars
+RUN chmod 644 $SPARK_HOME/jars/guava-31.0.1-jre.jar
 # Add the connector jar needed to access Google Cloud Storage using the Hadoop FileSystem API.
 ADD https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar $SPARK_HOME/jars
 RUN chmod 644 $SPARK_HOME/jars/gcs-connector-hadoop3-latest.jar

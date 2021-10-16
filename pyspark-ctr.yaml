@@ -20,6 +20,7 @@ spec:
     cores: 1
     labels:
       version: 3.1.1
+    memory: "512m"
     secrets:
       - name: "spark-sa"
         path: "/mnt/secrets"
@@ -28,11 +29,11 @@ spec:
       GCS_PROJECT_ID: kubeflow-yli
     serviceAccount: spark-sa
   executor:
-    instances: 3
-    cores: 3
+    instances: 1
+    cores: 1
     labels:
       version: 3.1.1
-    memory: "5g"
+    memory: "512m"
     secrets:
       - name: "spark-sa"
         path: "/mnt/secrets"

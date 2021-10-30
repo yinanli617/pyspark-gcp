@@ -20,7 +20,6 @@ FROM ${SPARK_IMAGE}
 # Switch to user root so we can add additional jars and configuration files.
 USER root
 
-ADD https://raw.githubusercontent.com/yinanli617/ctr-prediction/master/pyspark-job.py /pipelines/
 ADD ./requirements.txt /pip-requirements/
 RUN pip3 install -r /pip-requirements/requirements.txt
 
